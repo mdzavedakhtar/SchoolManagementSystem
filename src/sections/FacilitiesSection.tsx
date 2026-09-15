@@ -3,39 +3,29 @@ import { motion } from 'framer-motion';
 import { Container } from '../components/ui/Container';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { Card } from '../components/ui/Card';
-import { BookOpen, Laptop, FlaskConical, Trophy, Users, LayoutGrid } from 'lucide-react';
+import { LayoutGrid, BookOpen, Compass, Sparkles } from 'lucide-react';
 
 export const FacilitiesSection: React.FC = () => {
   const facilityCategories = [
     {
       icon: LayoutGrid,
-      title: "Classrooms",
-      description: "Structured learning spaces designed for focused instruction and teacher-student interaction."
+      title: "Supportive Classrooms",
+      description: "Focused classroom environments designed to encourage participation and learning."
     },
     {
       icon: BookOpen,
-      title: "Library & Study Resources",
-      description: "Curated reference books, text guides, and study materials for school and competitive preparation."
+      title: "Learning Resources",
+      description: "Academic resources to support classroom learning and regular practice."
     },
     {
-      icon: Laptop,
-      title: "Computer Education",
-      description: "Basic digital literacy and computer familiarity for modern technical understanding."
+      icon: Compass,
+      title: "Academic Guidance",
+      description: "Subject-focused support for students across different academic levels."
     },
     {
-      icon: FlaskConical,
-      title: "Science Learning",
-      description: "Practical demonstration and conceptual apparatus for Physics, Chemistry & Biology."
-    },
-    {
-      icon: Trophy,
-      title: "Sports & Physical Wellness",
-      description: "Activities promoting physical fitness, discipline, teamwork, and healthy outdoor habits."
-    },
-    {
-      icon: Users,
-      title: "Student Activities",
-      description: "Co-curricular events, debate, quiz competitions, and cultural celebrations."
+      icon: Sparkles,
+      title: "Student Development",
+      description: "Encouraging confidence, discipline and positive learning habits."
     }
   ];
 
@@ -44,13 +34,13 @@ export const FacilitiesSection: React.FC = () => {
       <Container size="default">
         
         <SectionHeading
-          badge="Campus Infrastructure Overview"
-          title="Learning Infrastructure & Resources"
-          subtitle="Designed to support focused academic study, conceptual clarity, and balanced student growth."
+          badge="Learning Environment"
+          title="Campus Infrastructure & Environment"
+          subtitle="Designed to support focused academic study, conceptual clarity, and positive student development."
           align="center"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {facilityCategories.map((facility, index) => {
             const Icon = facility.icon;
             return (
@@ -75,20 +65,11 @@ export const FacilitiesSection: React.FC = () => {
                       {facility.description}
                     </p>
                   </div>
-
-                  <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
-                    <span>Resource Overview</span>
-                    <span className="text-gold-600 font-semibold group-hover:translate-x-1 transition-transform">Info →</span>
-                  </div>
                 </Card>
               </motion.div>
             );
           })}
         </div>
-
-        <p className="text-center text-xs text-slate-500 mt-8 italic">
-          * Campus facility imagery will be updated following final client photography review.
-        </p>
 
       </Container>
     </section>

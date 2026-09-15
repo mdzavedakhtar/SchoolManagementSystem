@@ -11,8 +11,8 @@ export interface EnquiryFormData {
   fullName: string;
   phone: string;
   studentClass: string;
-  interestedIn: 'School' | 'Coaching' | 'Polytechnic' | 'Paramedical';
-  medium: 'Hindi' | 'English';
+  interestedIn: string;
+  medium: string;
   message: string;
 }
 
@@ -20,9 +20,9 @@ export const EnquiryFormSection: React.FC = () => {
   const [formData, setFormData] = useState<EnquiryFormData>({
     fullName: '',
     phone: '',
-    studentClass: 'Class VIII',
-    interestedIn: 'School',
-    medium: 'English',
+    studentClass: '',
+    interestedIn: '',
+    medium: '',
     message: ''
   });
 
@@ -67,13 +67,13 @@ export const EnquiryFormSection: React.FC = () => {
       // Abstracted service call simulation (wiring to REST/Webhook API ready)
       await new Promise((resolve) => setTimeout(resolve, 1000));
       console.log('Submitted Enquiry Payload:', formData);
-      setIsSuccess(true);
+                      setIsSuccess(true);
       setFormData({
         fullName: '',
         phone: '',
-        studentClass: 'Class VIII',
-        interestedIn: 'School',
-        medium: 'English',
+        studentClass: '',
+        interestedIn: '',
+        medium: '',
         message: ''
       });
     } catch (err) {
@@ -218,7 +218,7 @@ export const EnquiryFormSection: React.FC = () => {
                         name="studentClass"
                         value={formData.studentClass}
                         onChange={handleChange}
-                        placeholder="e.g. Class VIII / X / XII"
+                        placeholder="Select Class"
                         className={`w-full px-4 py-2.5 text-sm rounded-xl border ${
                           errors.studentClass ? 'border-red-500' : 'border-slate-300'
                         } focus:outline-none focus:ring-2 focus:ring-academic-200`}
@@ -239,6 +239,7 @@ export const EnquiryFormSection: React.FC = () => {
                         onChange={handleChange}
                         className="w-full px-3 py-2.5 text-sm rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-academic-200"
                       >
+                        <option value="">Select Interest</option>
                         <option value="School">School (MG Oriental)</option>
                         <option value="Coaching">Coaching (New Era)</option>
                         <option value="Polytechnic">Polytechnic Prep</option>
@@ -257,6 +258,7 @@ export const EnquiryFormSection: React.FC = () => {
                         onChange={handleChange}
                         className="w-full px-3 py-2.5 text-sm rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-academic-200"
                       >
+                        <option value="">Select Medium</option>
                         <option value="English">English Medium</option>
                         <option value="Hindi">Hindi Medium</option>
                       </select>

@@ -48,24 +48,34 @@ export const SplitSchoolCoachingSection: React.FC = () => {
               </h3>
               <p className="text-sm font-semibold text-gold-600 uppercase tracking-wider mb-4">
                 Classes {INSTITUTION_INFO.schoolGrades}
+              </p>              <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+                MG Oriental School focuses on building strong academic foundations through a supportive learning environment that encourages curiosity, confidence, discipline and positive learning habits.
               </p>
 
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
-                A disciplined academic environment fostering strong foundational learning, moral character, and conceptual clarity according to modern CBSE guidelines.
-              </p>
-
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-slate-700 font-medium">Nursery to VIII Comprehensive CBSE Syllabus</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700 font-medium">Nursery to Class VIII</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-slate-700 font-medium">English & Hindi Medium Curriculum Delivery</span>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700 font-medium">CBSE-pattern academic approach</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-slate-700 font-medium">Character Building & Conceptual Learning Focus</span>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700 font-medium">Hindi & English learning support</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700 font-medium">Strong academic foundations</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700 font-medium">Student-focused learning</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-700 font-medium">Values and discipline</span>
                 </div>
               </div>
             </div>
@@ -106,7 +116,7 @@ export const SplitSchoolCoachingSection: React.FC = () => {
                   <GraduationCap className="w-7 h-7" />
                 </div>
                 <Badge variant="gold" size="md">
-                  Nursery to XII & Competitive
+                  Nursery to XII
                 </Badge>
               </div>
 
@@ -114,25 +124,37 @@ export const SplitSchoolCoachingSection: React.FC = () => {
                 {INSTITUTION_INFO.coachingName}
               </h3>
               <p className="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-4">
-                Hindi & English Medium
+                Nursery – XII
               </p>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Targeted academic coaching for classes Nursery to XII, stream specialization (Science, Commerce, Arts), and entrance exam preparation for Polytechnic & Paramedical courses.
+                New Era Coaching Centre provides academic guidance for students from Nursery to Class XII in both Hindi and English medium, along with preparation support for Polytechnic and Paramedical opportunities.
               </p>
 
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-3">
-                  <Sparkles className="w-5 h-5 text-gold-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-slate-200 font-medium">Classes IX – XII Stream Coaching (Science, Commerce, Arts)</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                <div className="flex items-start gap-2.5">
+                  <Sparkles className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-200 font-medium">Nursery to Class XII</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Sparkles className="w-5 h-5 text-gold-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-slate-200 font-medium">Specialized Batches for Polytechnic & Paramedical Exams</span>
+                <div className="flex items-start gap-2.5">
+                  <Sparkles className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-200 font-medium">Hindi & English Medium</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Sparkles className="w-5 h-5 text-gold-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-slate-200 font-medium">Dedicated Doubt Clearing & Chapter Practice Tests</span>
+                <div className="flex items-start gap-2.5">
+                  <Sparkles className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-200 font-medium">Science, Commerce & Arts</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <Sparkles className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-200 font-medium">Academic support and revision</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <Sparkles className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-200 font-medium">Regular practice</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <Sparkles className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-slate-200 font-medium">Polytechnic & Paramedical preparation</span>
                 </div>
               </div>
             </div>

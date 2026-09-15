@@ -28,78 +28,85 @@ export const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-20 lg:py-28 bg-white relative">
       <Container size="default">
-        
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12">
           
-          {/* Left Text Column */}
+          {/* About School Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-6 space-y-6"
           >
-            <SectionHeading
-              badge="About Institution"
-              title="Education That Builds More Than Academics"
-              align="left"
-              className="mb-4"
-            />
+            <Card className="p-8 sm:p-10 h-full flex flex-col justify-between border-slate-200/80">
+              <div className="space-y-4">
+                <SectionHeading
+                  badge="MG Oriental School"
+                  title="A New Beginning in Quality Education"
+                  align="left"
+                  className="mb-2"
+                />
 
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-              <strong>{INSTITUTION_INFO.schoolName}</strong> and <strong>{INSTITUTION_INFO.coachingName}</strong> work in harmony to provide students in Vaishali, Bihar with rigorous schooling and specialized academic guidance.
-            </p>
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans">
+                  MG Oriental School has been established with a vision to provide accessible, disciplined and quality-focused education to children in the local community. With classes from Nursery to VIII, the school focuses on building strong academic foundations while encouraging confidence, discipline, curiosity and good values.
+                </p>
 
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Whether laying early foundational concepts from Nursery to Class VIII or preparing senior students for Class XII board exams and competitive entrance tests like Polytechnic and Paramedical, our objective remains steadfast: nurturing disciplined, confident, and knowledgeable learners.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <CheckCircle className="w-5 h-5 text-gold-500 flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-navy-900">Bilingual Support (Hindi & English)</span>
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans">
+                  Our approach is centered around understanding each learner's needs and creating a positive environment where students can learn, participate and grow.
+                </p>
               </div>
-              <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <CheckCircle className="w-5 h-5 text-gold-500 flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-navy-900">CBSE Curriculum Pattern</span>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6 mt-6 border-t border-slate-100">
+                <div className="flex items-center gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                  <span className="text-xs sm:text-sm font-semibold text-navy-900">Nursery to VIII (CBSE Pattern)</span>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                  <span className="text-xs sm:text-sm font-semibold text-navy-900">Values & Discipline Focus</span>
+                </div>
               </div>
-            </div>
+            </Card>
           </motion.div>
 
-          {/* Right Principles Cards */}
-          <div className="lg:col-span-6 space-y-4">
-            {principles.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.15 }}
-                >
-                  <Card goldAccent={index === 0} className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 rounded-xl bg-navy-800 text-gold-400 flex-shrink-0">
-                        <Icon className="w-6 h-6" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-bold font-heading text-navy-900 mb-1">
-                          {item.title}
-                        </h3>
-                        <p className="text-sm text-slate-600 leading-relaxed">
-                          {item.description}
-                        </p>
-                      </div>
-                    </div>
-                  </Card>
-                </motion.div>
-              );
-            })}
-          </div>
+          {/* About Coaching Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+          >
+            <Card goldAccent className="p-8 sm:p-10 h-full flex flex-col justify-between border-slate-200/80">
+              <div className="space-y-4">
+                <SectionHeading
+                  badge="New Era Coaching Centre"
+                  title="Focused Coaching for Every Stage of Learning"
+                  align="left"
+                  className="mb-2"
+                />
+
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans">
+                  New Era Coaching Centre provides academic support from Nursery to Class XII for students studying in both Hindi and English medium. The centre offers guidance across Science, Commerce and Arts, along with focused preparation for Polytechnic and Paramedical opportunities.
+                </p>
+
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans">
+                  The objective is to help students strengthen their concepts, practise regularly and approach their academic goals with confidence.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6 mt-6 border-t border-slate-100">
+                <div className="flex items-center gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                  <span className="text-xs sm:text-sm font-semibold text-navy-900">Nursery to XII (Bilingual)</span>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                  <span className="text-xs sm:text-sm font-semibold text-navy-900">Polytechnic & Paramedical</span>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
 
         </div>
-
       </Container>
     </section>
   );

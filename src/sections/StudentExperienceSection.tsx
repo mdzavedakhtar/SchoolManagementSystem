@@ -8,23 +8,23 @@ export const StudentExperienceSection: React.FC = () => {
   const experiences = [
     {
       icon: Sparkles,
-      title: "Interactive Classroom Atmosphere",
-      description: "Encouraging curiosity, student participation, and question asking in every subject."
+      title: "Interactive Learning",
+      description: "Encouraging students to ask questions, participate and understand concepts clearly."
     },
     {
       icon: Heart,
-      title: "Values & Moral Guidance",
-      description: "Cultivating respect, discipline, empathy, and integrity alongside academic studies."
+      title: "Personal Attention",
+      description: "Supporting students according to their learning needs and academic level."
     },
     {
       icon: Compass,
-      title: "Exam Preparation Support",
-      description: "Structured practice tests and doubt elimination sessions to build confidence before exams."
+      title: "Regular Practice",
+      description: "Practice and revision to strengthen understanding and build confidence."
     },
     {
       icon: ShieldCheck,
-      title: "Safe & Supportive Environment",
-      description: "Careful monitoring and respectful surroundings ensuring comfort for every young learner."
+      title: "Positive Environment",
+      description: "A respectful and supportive atmosphere for learning and personal growth."
     }
   ];
 

@@ -11,42 +11,42 @@ export const FAQSection: React.FC = () => {
     {
       id: "faq-1",
       question: "Which classes does MG Oriental School offer?",
-      answer: "MG Oriental School offers schooling from Nursery to Class VIII following the CBSE pattern of education."
+      answer: "MG Oriental School currently offers classes from Nursery to VIII under a CBSE-pattern academic approach."
     },
     {
       id: "faq-2",
-      question: "What classes does New Era Coaching Centre cover?",
-      answer: "New Era Coaching Centre provides comprehensive coaching for students from Nursery all the way up to Class XII."
+      question: "Which classes does New Era Coaching Centre cover?",
+      answer: "New Era Coaching Centre provides academic coaching from Nursery to Class XII."
     },
     {
       id: "faq-3",
-      question: "Do you offer Hindi and English medium coaching?",
-      answer: "Yes, both MG Oriental School and New Era Coaching Centre provide instruction and coaching in Hindi and English medium."
+      question: "Which mediums are supported?",
+      answer: "Coaching support is available for both Hindi and English medium students."
     },
     {
       id: "faq-4",
-      question: "Which streams are available for senior secondary coaching?",
-      answer: "For Class XI and XII, New Era Coaching Centre provides specialized coaching across Science (Physics, Chemistry, Maths, Biology), Commerce (Accountancy, Business Studies, Economics), and Arts streams."
+      question: "Which streams are available?",
+      answer: "Science, Commerce and Arts streams are available for senior classes, subject to the centre's current batch structure."
     },
     {
       id: "faq-5",
-      question: "Do you provide Polytechnic preparation?",
-      answer: "Yes, New Era Coaching Centre runs specialized competitive exam preparation batches for Polytechnic diploma entrance tests."
+      question: "Do you provide competitive exam preparation?",
+      answer: "Yes. The centre provides preparation support for Polytechnic and Paramedical opportunities."
     },
     {
       id: "faq-6",
-      question: "Do you provide Paramedical preparation?",
-      answer: "Yes, we offer targeted coaching for Paramedical entrance examinations with focused preparation in Science and General Knowledge."
+      question: "Where are you located?",
+      answer: "22 Mile Chok, Tejpurwa, Mahua Road, Vaishali, Bihar – 843102."
     },
     {
       id: "faq-7",
-      question: "Where is the institution located?",
-      answer: `We are located at ${INSTITUTION_INFO.address.full}.`
+      question: "How can I enquire about admission?",
+      answer: "You can contact the institution through the enquiry form, phone or WhatsApp."
     },
     {
       id: "faq-8",
-      question: "How can I enquire about admission?",
-      answer: `You can submit the online enquiry form on this website, contact us directly via phone at ${INSTITUTION_INFO.contactNumber}, or click any of our WhatsApp CTA buttons to send us an instant message.`
+      question: "How can I contact the institution?",
+      answer: "Call or WhatsApp on +91 9934795178."
     }
   ];
 

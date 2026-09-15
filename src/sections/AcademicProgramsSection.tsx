@@ -10,72 +10,72 @@ export const AcademicProgramsSection: React.FC = () => {
   const programs = [
     {
       id: "foundation",
-      title: "FOUNDATION STAGE",
+      title: "Foundation Stage",
       grades: "Nursery – V",
       category: "school" as const,
       badge: "MG Oriental School (CBSE Pattern)",
-      description: "Building strong literacy, numeracy, conceptual clarity, and curiosity in young learners.",
+      description: "Early-stage learning focused on basic concepts, communication, curiosity and positive learning habits.",
       highlights: [
-        "CBSE Curriculum Standards",
-        "Bilingual Learning Support (Hindi & English)",
-        "Interactive Conceptual Teaching",
-        "Individual Child Attention"
+        "Foundational Learning",
+        "Concept Development",
+        "Positive Learning Habits",
+        "Student Participation"
       ]
     },
     {
       id: "middle",
-      title: "MIDDLE SCHOOL",
+      title: "Middle School",
       grades: "VI – VIII",
       category: "school" as const,
       badge: "MG Oriental School (CBSE Pattern)",
-      description: "Developing analytical thinking, scientific aptitude, and strong language skills for higher education.",
+      description: "Concept-focused learning designed to strengthen subject understanding and prepare students for higher academic levels.",
       highlights: [
-        "Rigorous CBSE Syllabus",
-        "Core Subject Mastery (Maths, Science, Social)",
-        "Continuous Evaluation & Assessment",
-        "Discipline & Ethics Focus"
+        "Concept Clarity",
+        "Subject Understanding",
+        "Regular Practice",
+        "Academic Development"
       ]
     },
     {
       id: "secondary-coaching",
-      title: "SECONDARY COACHING",
+      title: "Secondary Coaching",
       grades: "IX – X",
       category: "coaching" as const,
       badge: "New Era Coaching Centre",
-      description: "Targeted coaching for board examination excellence and solid conceptual clarity.",
+      description: "Academic support with focused subject preparation, practice and revision.",
       highlights: [
-        "Chapter-wise Practice & Test Series",
-        "Doubt Resolution Sessions",
-        "Hindi & English Medium Batches",
-        "Board Exam Oriented Preparation"
+        "Subject Guidance",
+        "Concept Practice",
+        "Revision Support",
+        "Academic Preparation"
       ]
     },
     {
       id: "senior-secondary-coaching",
-      title: "SENIOR SECONDARY COACHING",
+      title: "Senior Secondary Coaching",
       grades: "XI – XII",
       category: "coaching" as const,
       badge: "New Era Coaching Centre",
-      description: "Specialized stream coaching for Science, Commerce, and Arts with expert faculty mentorship.",
+      description: "Stream-based academic guidance for Science, Commerce and Arts students.",
       highlights: [
-        "Stream Specific Deep-Dive",
-        "Regular Assessment & Feedback",
-        "Concept-to-Application Approach",
-        "Competitive Foundation Integration"
+        "Science",
+        "Commerce",
+        "Arts",
+        "Stream-based Guidance"
       ]
     },
     {
       id: "competitive-prep",
-      title: "COMPETITIVE PREPARATION",
+      title: "Competitive Preparation",
       grades: "Polytechnic / Paramedical",
       category: "coaching" as const,
       badge: "New Era Specialized Wing",
-      description: "Focused entrance exam preparation for Polytechnic and Paramedical courses.",
+      description: "Focused preparation with subject practice, revision and examination-oriented guidance.",
       highlights: [
-        "Exam Pattern Syllabus Coverage",
-        "Mock Tests & Time Management",
-        "Previous Year Paper Solving",
-        "Strategic Guidance & Counselling"
+        "Subject Practice",
+        "Revision",
+        "Question Practice",
+        "Exam-oriented Preparation"
       ]
     }
   ];

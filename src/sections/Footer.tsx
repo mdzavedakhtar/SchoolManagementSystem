@@ -27,9 +27,13 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-md">
-              Combining structured CBSE school education (Nursery to VIII) with specialized coaching (Nursery to XII, Science, Commerce, Arts) and competitive preparation (Polytechnic & Paramedical).
-            </p>
+            <div className="space-y-1.5 text-xs sm:text-sm text-slate-400">
+              <p><strong className="text-white">School:</strong> {INSTITUTION_INFO.schoolName} ({INSTITUTION_INFO.schoolGrades})</p>
+              <p><strong className="text-white">Coaching:</strong> {INSTITUTION_INFO.coachingName} ({INSTITUTION_INFO.coachingGrades})</p>
+              <p><strong className="text-white">Medium:</strong> {INSTITUTION_INFO.medium}</p>
+              <p><strong className="text-white">Streams:</strong> {INSTITUTION_INFO.streams.join(" • ")}</p>
+              <p><strong className="text-white">Competitive Prep:</strong> {INSTITUTION_INFO.competitiveExams.join(" • ")}</p>
+            </div>
 
             <div className="pt-2 flex items-center gap-3">
               <a

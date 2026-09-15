@@ -12,12 +12,12 @@ export const FacultySection: React.FC = () => {
         
         <SectionHeading
           badge="Academic Mentors"
-          title="Our Dedicated Faculty & Mentors"
-          subtitle="Experienced educators committed to subject mastery, discipline, and personalized student guidance."
+          title="Dedicated Academic Guidance"
+          subtitle="Our academic team is focused on creating a supportive learning environment with subject-focused guidance and student-oriented teaching."
           align="center"
         />
 
-        {/* Faculty Architectural Placeholder Container */}
+        {/* Faculty Container */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,25 +30,25 @@ export const FacultySection: React.FC = () => {
           </div>
 
           <h3 className="text-xl sm:text-2xl font-bold font-heading text-navy-900">
-            Qualified Subject Specialists Across All Wings
+            Dedicated Academic Guidance
           </h3>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-            Our teaching team comprises qualified educators specializing in Primary CBSE education, High School Science, Commerce & Arts streams, as well as competitive entrance exam mentors for Polytechnic and Paramedical courses.
+            Our academic team is focused on creating a supportive learning environment with subject-focused guidance and student-oriented teaching.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-left">
             <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
               <GraduationCap className="w-5 h-5 text-gold-500 flex-shrink-0" />
               <div>
-                <p className="text-xs font-bold text-navy-900">CBSE Trained</p>
-                <p className="text-[11px] text-slate-500">School Faculty</p>
+                <p className="text-xs font-bold text-navy-900">CBSE Pattern</p>
+                <p className="text-[11px] text-slate-500">School Mentorship</p>
               </div>
             </div>
             <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
               <BookOpen className="w-5 h-5 text-gold-500 flex-shrink-0" />
               <div>
-                <p className="text-xs font-bold text-navy-900">Stream Experts</p>
+                <p className="text-xs font-bold text-navy-900">Subject Guidance</p>
                 <p className="text-[11px] text-slate-500">Science / Commerce / Arts</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export const FacultySection: React.FC = () => {
 
           <div className="pt-4 border-t border-slate-100">
             <p className="text-xs font-semibold text-slate-500 italic">
-              Faculty profiles will be updated here.
+              Faculty profiles will be added as our academic team information is finalized.
             </p>
           </div>
         </motion.div>

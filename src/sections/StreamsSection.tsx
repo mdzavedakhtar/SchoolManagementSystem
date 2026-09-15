@@ -27,7 +27,7 @@ export const StreamsSection: React.FC = () => {
       name: "ARTS",
       icon: BookOpen,
       description: "In-depth humanities education fostering critical inquiry, social understanding, and expression.",
-      subjects: ["Humanities-oriented Academic Preparation"]
+      subjects: ["Humanities & Social Science Based Learning"]
     }
   ];
 

@@ -13,15 +13,15 @@ export const FinalCTASection: React.FC = () => {
       <Container size="default" className="relative z-10 text-center space-y-6 max-w-4xl">
         <div className="inline-flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-gold-400" />
-          <span className="text-xs font-bold tracking-widest text-gold-400 uppercase">Admissions Open 2026</span>
+          <span className="text-xs font-bold tracking-widest text-gold-400 uppercase">Admissions Open</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-white tracking-tight leading-tight">
-          Your Journey Starts With the Right Foundation.
+          Admissions Open
         </h2>
 
         <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-sans leading-relaxed">
-          Discover the right learning environment for your child's academic journey at MG Oriental School & New Era Coaching Centre.
+          Begin your child's academic journey with MG Oriental School and New Era Coaching Centre.
         </p>
 
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -11,28 +11,28 @@ export const CompetitiveSection: React.FC = () => {
   const courses = [
     {
       id: "polytechnic",
-      name: "POLYTECHNIC PREPARATION",
-      badge: "Diploma Engineering Entrance",
-      description: "Dedicated preparation for Polytechnic Diploma entrance examinations with intensive focus on Science and Mathematics problem-solving.",
+      name: "Polytechnic Preparation",
+      badge: "Technical Guidance",
+      description: "Concept-based preparation in Mathematics, Physics and Chemistry with regular practice and revision.",
       icon: Compass,
       keyAreas: [
-        "Comprehensive Physics, Chemistry & Maths Review",
-        "Speed & Accuracy Test Series",
-        "Formula Techniques & Shortcut Methods",
-        "Structured Doubt Elimination"
+        "Concept-based Mathematics, Physics & Chemistry",
+        "Regular Practice & Problem Solving",
+        "Syllabus Revision",
+        "Examination Guidance"
       ]
     },
     {
       id: "paramedical",
-      name: "PARAMEDICAL PREPARATION",
-      badge: "Healthcare Diploma Entrance",
-      description: "Specialized coaching for Paramedical entrance tests, preparing students for rewarding careers in healthcare & medical support services.",
+      name: "Paramedical Preparation",
+      badge: "Healthcare Guidance",
+      description: "Academic preparation with focus on Biology, General Science and examination-oriented practice.",
       icon: Award,
       keyAreas: [
-        "Biology & Life Sciences Focus",
-        "General Knowledge & Applied Science",
-        "Question Bank Practice & Solutions",
-        "Exam Strategy & Revision Workshops"
+        "Biology & General Science Focus",
+        "Examination-oriented Practice",
+        "Regular Revision & Doubt Support",
+        "Academic Preparation"
       ]
     }
   ];

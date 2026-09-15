@@ -11,8 +11,8 @@ export const TestimonialsSection: React.FC = () => {
         
         <SectionHeading
           badge="Community Voices"
-          title="Parent & Student Testimonials"
-          subtitle="Feedback from parents and students experiencing our school and coaching education."
+          title="Parent & Student Voices"
+          subtitle="As our institution begins its journey, we look forward to building strong relationships with students and parents and sharing their experiences in the future."
           align="center"
         />
 
@@ -28,16 +28,16 @@ export const TestimonialsSection: React.FC = () => {
           </div>
 
           <h3 className="text-xl font-bold font-heading text-navy-900">
-            Parent & Student Feedback Space
+            Parent & Student Voices
           </h3>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            We prioritize authentic feedback from our community. Verified parent reviews and student experiences will be published here following the academic term review.
+            As our institution begins its journey, we look forward to building strong relationships with students and parents and sharing their experiences in the future.
           </p>
 
           <div className="pt-4 border-t border-slate-100">
             <p className="text-xs font-semibold text-slate-500 italic">
-              "Parent and student testimonials will appear here."
+              Testimonials will be added as feedback is received from our school and coaching community.
             </p>
           </div>
         </motion.div>

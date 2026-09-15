@@ -56,7 +56,7 @@ export const HeroSection: React.FC = () => {
               variants={fadeInUp}
               className="text-base sm:text-lg text-slate-300/90 max-w-xl mx-auto lg:mx-0 font-sans leading-relaxed"
             >
-              Quality school education at <strong className="text-white font-semibold">{INSTITUTION_INFO.schoolName}</strong> and dedicated coaching at <strong className="text-gold-300 font-semibold">{INSTITUTION_INFO.coachingName}</strong> for academic excellence, competitive preparation, and lifelong learning.
+              <strong className="text-white font-semibold">{INSTITUTION_INFO.schoolName}</strong> is committed to providing a supportive and engaging learning environment for young learners from Nursery to Class VIII, following a CBSE-pattern academic approach. A focused learning journey for students, with personal attention, strong fundamentals and value-based education.
             </motion.p>
 
             {/* 4. Action CTAs & WhatsApp Link */}

@@ -12,20 +12,26 @@ export const AdmissionSection: React.FC = () => {
     {
       number: "01",
       icon: Edit3,
-      title: "Enquire Online or In-Person",
-      description: "Fill out the quick enquiry form or visit our campus at 22 Mile Chok, Vaishali."
+      title: "Enquire",
+      description: "Contact our team through phone, WhatsApp or the enquiry form."
     },
     {
       number: "02",
       icon: PhoneCall,
-      title: "Talk to Academic Counsellor",
-      description: "Discuss class availability, medium (Hindi/English), streams, or competitive preparation."
+      title: "Discuss",
+      description: "Share the student's class, medium and academic requirements."
     },
     {
       number: "03",
+      icon: MessageSquare,
+      title: "Admission Guidance",
+      description: "Our team will guide you through the admission process and next steps."
+    },
+    {
+      number: "04",
       icon: GraduationCap,
-      title: "Begin Your Learning Journey",
-      description: "Complete formal registration and join the regular school or coaching batch."
+      title: "Begin Learning",
+      description: "Complete the required formalities and begin the academic journey."
     }
   ];
 
@@ -35,13 +41,13 @@ export const AdmissionSection: React.FC = () => {
         
         <SectionHeading
           badge="Enrollment Process"
-          title="Admissions & Enquiries"
-          subtitle="Simple 3-step admission process for MG Oriental School and New Era Coaching Centre."
+          title="Admissions Open"
+          subtitle="Begin your child's academic journey with MG Oriental School and New Era Coaching Centre."
           align="center"
         />
 
-        {/* 3 Steps Visual */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        {/* 4 Steps Visual */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
@@ -50,25 +56,27 @@ export const AdmissionSection: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="bg-slate-50 rounded-3xl p-8 border border-slate-200/80 hover:bg-white hover:shadow-premium transition-all duration-300 relative group"
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-slate-50 rounded-3xl p-6 sm:p-7 border border-slate-200/80 hover:bg-white hover:shadow-premium transition-all duration-300 relative group flex flex-col justify-between"
               >
-                <div className="flex items-center justify-between mb-6">
-                  <div className="w-14 h-14 rounded-2xl bg-navy-900 text-gold-400 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-                    <Icon className="w-7 h-7" />
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-navy-900 text-gold-400 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+                      <Icon className="w-6 h-6" />
+                    </div>
+                    <span className="text-2xl font-black font-heading text-slate-300 group-hover:text-gold-500 transition-colors">
+                      {step.number}
+                    </span>
                   </div>
-                  <span className="text-3xl font-black font-heading text-slate-300 group-hover:text-gold-500 transition-colors">
-                    {step.number}
-                  </span>
+
+                  <h3 className="text-lg font-bold font-heading text-navy-900 mb-2">
+                    {step.title}
+                  </h3>
+
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    {step.description}
+                  </p>
                 </div>
-
-                <h3 className="text-xl font-bold font-heading text-navy-900 mb-2">
-                  {step.title}
-                </h3>
-
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  {step.description}
-                </p>
               </motion.div>
             );
           })}
@@ -88,7 +96,7 @@ export const AdmissionSection: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="#enquire" className="w-full sm:w-auto">
               <Button variant="gold" size="lg" rightIcon={<ArrowRight className="w-4 h-4" />} className="w-full justify-center">
-                Apply / Enquire Now
+                Enquire Now
               </Button>
             </a>
 

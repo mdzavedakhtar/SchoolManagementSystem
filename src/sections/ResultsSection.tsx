@@ -10,9 +10,9 @@ export const ResultsSection: React.FC = () => {
       <Container size="default">
         
         <SectionHeading
-          badge="Academic Performance & Growth"
-          title="Results & Academic Accomplishments"
-          subtitle="Recognizing consistency, academic discipline, and student performance across school & coaching batches."
+          badge="New Institution • Growing Together"
+          title="Building Today's Learners for Tomorrow's Achievements"
+          subtitle="MG Oriental School and New Era Coaching Centre are at the beginning of their academic journey. Our current focus is on building strong fundamentals, consistent learning habits and a supportive academic environment for every student."
           align="center"
         />
 
@@ -28,34 +28,34 @@ export const ResultsSection: React.FC = () => {
           </div>
 
           <h3 className="text-2xl sm:text-3xl font-extrabold font-heading text-white">
-            Commitment to Real Educational Progress
+            Building Today's Learners for Tomorrow's Achievements
           </h3>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-            Our students demonstrate steady conceptual improvement and academic discipline in school assessments, board examinations, and entrance preparations.
+            MG Oriental School and New Era Coaching Centre are at the beginning of their academic journey. Our current focus is on building strong fundamentals, consistent learning habits and a supportive academic environment for every student.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left pt-2">
             <div className="bg-navy-950/70 p-4 rounded-xl border border-navy-700/50 flex items-center gap-3">
               <Star className="w-5 h-5 text-gold-400 flex-shrink-0" />
               <div>
-                <p className="text-xs font-bold text-white">Regular Assessment</p>
-                <p className="text-[11px] text-slate-400">Chapter-wise progress evaluation</p>
+                <p className="text-xs font-bold text-white">Strong Fundamentals</p>
+                <p className="text-[11px] text-slate-400">Concept clarity from early stages</p>
               </div>
             </div>
             <div className="bg-navy-950/70 p-4 rounded-xl border border-navy-700/50 flex items-center gap-3">
               <CheckCircle className="w-5 h-5 text-gold-400 flex-shrink-0" />
               <div>
-                <p className="text-xs font-bold text-white">Transparent Tracking</p>
-                <p className="text-[11px] text-slate-400">Direct feedback to parents</p>
+                <p className="text-xs font-bold text-white">Supportive Environment</p>
+                <p className="text-[11px] text-slate-400">Individual focus & positive habits</p>
               </div>
             </div>
           </div>
 
           <div className="pt-4 border-t border-navy-800">
-            <p className="text-xs text-gold-400 font-semibold tracking-wide">
-              Academic achievements and student accomplishments will be updated here.
-            </p>
+            <span className="inline-block px-4 py-1.5 rounded-full bg-gold-500/20 border border-gold-500/40 text-xs font-bold text-gold-300">
+              New Institution • Growing Together
+            </span>
           </div>
         </motion.div>
 

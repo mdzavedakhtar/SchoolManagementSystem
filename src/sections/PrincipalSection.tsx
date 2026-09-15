@@ -86,12 +86,8 @@ export const PrincipalSection: React.FC = () => {
               <Quote className="w-10 h-10 text-gold-400 opacity-60 mb-2" />
 
               <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-sans italic">
-                "Welcome to <strong>{INSTITUTION_INFO.schoolName}</strong> and <strong>{INSTITUTION_INFO.coachingName}</strong>. Our mission is to provide an inclusive, disciplined, and empowering learning environment where every student gains both strong academic fundamentals and character values essential for future success."
+                "Our aim is to create a learning environment where every student receives the right foundation, guidance and encouragement to grow with confidence. We believe that education is not only about academic achievement, but also about developing discipline, responsibility and strong values."
               </p>
-
-              <div className="pt-3 border-t border-slate-200/80 text-xs text-slate-500 font-medium italic">
-                Principal's message will be added here after final approval.
-              </div>
 
               <div className="pt-4 border-t border-slate-200/80 flex items-center justify-between flex-wrap gap-4">
                 <div>
@@ -99,7 +95,7 @@ export const PrincipalSection: React.FC = () => {
                     {INSTITUTION_INFO.principalName}
                   </h4>
                   <p className="text-xs text-slate-500 font-semibold">
-                    Principal & Academic Director
+                    Principal
                   </p>
                 </div>
                 <div className="flex items-center gap-2 text-xs font-semibold text-navy-800 bg-gold-100 px-3 py-1.5 rounded-full">
