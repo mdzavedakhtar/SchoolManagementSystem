@@ -48,9 +48,9 @@ export const NAV_LINKS = [
   { name: "Home", href: "#hero" },
   { name: "School", href: "#school" },
   { name: "Coaching", href: "#coaching" },
+  { name: "About", href: "#about" },
   { name: "Academics", href: "#academics" },
   { name: "Gallery", href: "#gallery" },
-  { name: "About", href: "#about" },
   { name: "Results", href: "#results" },
   { name: "Contact", href: "#contact" },
 ];

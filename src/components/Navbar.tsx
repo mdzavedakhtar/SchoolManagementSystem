@@ -7,7 +7,7 @@ import { Button } from './ui/Button';
 import { MobileMenu } from './MobileMenu';
 import { GraduationCap, MessageSquare, Menu, X } from 'lucide-react';
 
-const SECTION_IDS = ['hero', 'school', 'coaching', 'academics', 'gallery', 'about', 'results', 'contact'];
+const SECTION_IDS = ['hero', 'school', 'coaching', 'about', 'academics', 'gallery', 'results', 'contact'];
 
 export const Navbar: React.FC = () => {
   const isScrolled = useScroll(20);
