@@ -115,7 +115,7 @@ export const LocationSection: React.FC = () => {
           >
             <iframe
               title="Institution Location Map"
-              src={`https://maps.google.com/maps?q=${encodeURIComponent("22 Mile Chok, Tezpurwa, Mahua Road, Vaishali, Bihar 843102")}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
+              src={`https://maps.google.com/maps?q=${encodeURIComponent("22 Mile Chok, Tejpurwa, Mahua Road, Vaishali, Bihar 843102")}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
               className="w-full h-full min-h-[380px] border-0 rounded-3xl"
               loading="lazy"
               allowFullScreen

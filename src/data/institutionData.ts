@@ -35,12 +35,12 @@ export const INSTITUTION_INFO: InstitutionData = {
   competitiveExams: ["Polytechnic", "Paramedical"],
   address: {
     spot: "22 Mile Chok",
-    village: "Tezpurwa",
+    village: "Tejpurwa",
     road: "Mahua Road",
     district: "Vaishali",
     state: "Bihar",
     pin: "843102",
-    full: "22 Mile Chok, Tezpurwa, Mahua Road, Vaishali, Bihar – 843102"
+    full: "22 Mile Chok, Tejpurwa, Mahua Road, Vaishali, Bihar – 843102"
   }
 };
 
